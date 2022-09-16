@@ -11,4 +11,5 @@ steps this terraform scipt will do:
 1) deploy a entire vpc with pulic and private subnet.
 2) Two ec2 in public subnet one for ansible and one for ansible host where we will install our jenkins.
 3) Then we have a ssh.tf file which will ssh in ansible machine and copy files from our local to ansible which will change inventory file and a playbook to    install jenkins which will run on host defined in inventory file.
+4) at the end the file will install ansible and print jenkins password for us as output.
 
